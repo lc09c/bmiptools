@@ -1,0 +1,3 @@
+include src/bmiptools/setting/files/experimental_setting_metadata_tag_list.txt
+include src/bmiptools/setting/files/global_setting.txt
+include requirements.txt

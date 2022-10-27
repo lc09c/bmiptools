@@ -1,0 +1,6 @@
+verbosity = 1
+use_multiprocessing = 1
+multiprocessing_type = 1
+cpu_buffer = 2
+use_gpu = 0
+contribute = 0

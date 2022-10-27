@@ -1,3 +1,23 @@
+Metadata-Version: 2.1
+Name: bmiptools
+Version: 1.0.1
+Summary: BioMaterial Image Processing tools (bmiptools) is a python library of functions for image processing of certain type of biological images (e.g. FIB-SEM, Back-scattering, ecc... ). The library is equipped with a minimal GUI thought for non-expert users.
+Home-page: https://gitlab.mpikg.mpg.de/curcuraci/bmiptools
+Author: Luca Curcuraci
+Author-email: Luca.Curcuraci@mpikg.mpg.de
+Project-URL: Bug tracker, https://gitlab.mpikg.mpg.de/curcuraci/bmiptools/-/issues/new
+Project-URL: Documentation, https://bmiptools.readthedocs.io/en/latest/
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering :: Image Processing
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: User Interfaces
+Classifier: Intended Audience :: Science/Research
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
 # BioMaterial Image Processing TOOLS
 
 
