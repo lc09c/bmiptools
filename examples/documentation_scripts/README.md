@@ -1,7 +1,7 @@
 ## Documentation scripts
 
 All the scripts here has been used to produces the images and animations used in the bmiptools documentation.
-The input data are all contained in the `Data.zip` file.
+The input data are all contained in the `Data.zip` file available at https://gitlab.mpikg.mpg.de/curcuraci/bmiptools/-/tree/master/examples/documentation_scripts.
 
 #### Hot to run these example scripts
 
