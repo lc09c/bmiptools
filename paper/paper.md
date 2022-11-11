@@ -45,8 +45,7 @@ Bmiptools is a Python package which can be used to perform image-processing of F
   should be found in an “objective manner”, in order to reduce the “human bias” in the selection of the parameters used for the 
   image-processing. 
 
-- Bmiptools should be simple to use for those having minimal coding experience with Python. Moreover, also users without coding  
-  experience should be able to use most of the bmiptools functionalities by means of a suitable GUI. 
+- Bmiptools should be simple to use for those having minimal coding experience with Python. Moreover, also users without coding experience should be able to use most of the bmiptools functionalities by means of a suitable GUI. 
 
 In addition to these three main requirements, other practical criteria are that the parameters describing the applied transformations need to be stored in an ordered and human understandable way, so that the user can easily follow the ‘history’ of the modifications the images have been subjected to.
 To fulfill a basic principle of (computational) reproducibility of the results, the sequence of transformations applied to the images (called pipeline, from now on), can be easily saved and loaded in bmiptools. When a pipeline is saved all the transformations applied are stored in a proper file. When the pipeline is loaded, all the transformation are applied in the same order and with the same parameters to the data. If applied to the original set of images, consequently the exact the same result is produced. This ensures reproducibility by any other scientist and allows to save storage space, as in principle only the pipeline object and initial images are needed to reproduce the output.
@@ -70,7 +69,7 @@ Bmiptools is equipped with a series of plugins, which can be used to apply a cor
 -	`Standardizer`: rescales the gray level histograms of the slices of a stack to a target range. 
 -	`HistogramMatcher`: matches the histograms of the slices of a stack, effectively removing sudden brightness variations between 
   slices.
--	`Denoiser`: reduces the noise level of the slices using classical denoising techniques  [@chang2000adapt],[@donoho1994ideal],
+-	`Denoiser`: reduces the noise level of the slices using classical denoising techniques  [@chang2000adapt,@donoho1994ideal],
   [@sudha2007wavelet],[@chambolle2004algorithm],[@paris2009bilateral],[@buades2011non].
 -	`DenoiserDNN`: reduces the noise level of the slices using the Noise2Void approach [@krull2019noise2void].
 - `Destriper`: eliminates curtaining artifacts, typical of FIB-SEM images [@munch2009stripe].
