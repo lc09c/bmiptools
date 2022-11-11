@@ -1,5 +1,5 @@
 ---
-title: 'bmiptools: BioMaterials Image Processing TOOLS'
+title: 'bmiptools: BioMaterials Image Processing Tools'
 tags:
   - Python
   - image-processing
@@ -29,7 +29,7 @@ bibliography: paper.bib
 # Summary
 
 
-Image-processing is a fundamental step in many scientific imaging techniques, and it is particularly critical in tomographic techniques. In most cases, the aim of the processing is to ‘clean’ the images from artifacts inherent to the technique and to facilitate a smooth and fast segmentation of the volumetric datasets. Focused ion beam/scanning electron microscopy (FIB/SEM) based tomography, which is gaining more and more importance in the fields of structural biology and biological materials, is one of these techniques where the ‘digital cleaning’ of the images becomes a fundamental step to obtain visually understandable and easy-to-segment volumetric datasets. In this case, the need for the digital cleaning arises from the sample inherent mechanical properties, the sample preparation and from the imaging workflow. Especially, FIB/SEM-based volume imaging performed under cryogenic conditions (cryo-FIB/SEM) is afflicted by certain systematic artifacts that heavily compromise the readability of the images. Bmiptools (BioMaterials Image Processing TOOLS) is a Python package designed for addressing this issue, with a series of plugins tailored to remove/mitigate the typical artifacts present in (cryo-)FIB/SEM image stacks. Bmiptools can be easily installed and used both via a Python API or via a simple GUI, making it accessible both to expert and non-expert users. 
+Image-processing is a fundamental step in many scientific imaging techniques, and it is particularly critical in tomographic techniques. In most cases, the aim of the processing is to ‘clean’ the images from artifacts inherent to the technique and to facilitate a smooth and fast segmentation of the volumetric datasets. Focused ion beam/scanning electron microscopy (FIB/SEM) based tomography, which is gaining more and more importance in the fields of structural biology and biological materials, is one of these techniques where the ‘digital cleaning’ of the images becomes a fundamental step to obtain visually understandable and easy-to-segment volumetric datasets. In this case, the need for the digital cleaning arises from the sample inherent mechanical properties, the sample preparation and from the imaging workflow. Especially, FIB/SEM-based volume imaging performed under cryogenic conditions (cryo-FIB/SEM) is afflicted by certain systematic artifacts that heavily compromise the readability of the images. Bmiptools (BioMaterials Image Processing Tools) is a Python package designed for addressing this issue, with a series of plugins tailored to remove/mitigate the typical artifacts present in (cryo-)FIB/SEM image stacks. Bmiptools can be easily installed and used both via a Python API or via a simple GUI, making it accessible both to expert and non-expert users. 
 
 
 # Statement of needs
@@ -70,14 +70,13 @@ Bmiptools is equipped with a series of plugins, which can be used to apply a cor
 -	`Standardizer`: rescales the gray level histograms of the slices of a stack to a target range. 
 -	`HistogramMatcher`: matches the histograms of the slices of a stack, effectively removing sudden brightness variations between 
   slices.
--	`Denoiser`: reduces the noise level of the slices using classical denoising techniques  [@chang2000adapt; @donoho1994ideal],
-  [@sudha2007wavelet],[@chambolle2004algorithm],[@paris2009bilateral],[@buades2011non].
+-	`Denoiser`: reduces the noise level of the slices using classical denoising techniques  [@chang2000adapt; @donoho1994ideal; @sudha2007wavelet; @chambolle2004algorithm; @paris2009bilateral; @buades2011non].
 -	`DenoiserDNN`: reduces the noise level of the slices using the Noise2Void approach [@krull2019noise2void].
 - `Destriper`: eliminates curtaining artifacts, typical of FIB-SEM images [@munch2009stripe].
 - `Flatter`: corrects for smooth brightness changes within a slice.
 -	`Decharger`: reduces charging artifacts, typical of cryo-FIB/SEM images.
 -	`Registrator`: aligns the slices of a stack to ensure 3D structural continuity of objects [@evangelidis2008parametric],   
-  [@reddy1996fft],[@le2005dense].
+  [@reddy1996fft; @le2005dense].
 -	`Affine`: performs a generic affine transformation (e.g., a rotation) on a stack.
 -	`Cropper`: crops a specific region of a stack. 
 -	`Equalizer`: enhances the contrast in an image using the CLAHE algorithm [@zuiderveld1994contrast].
