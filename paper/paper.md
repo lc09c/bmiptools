@@ -75,8 +75,7 @@ Bmiptools is equipped with a series of plugins, which can be used to apply a cor
 - `Destriper`: eliminates curtaining artifacts, typical of FIB-SEM images [@munch2009stripe].
 - `Flatter`: corrects for smooth brightness changes within a slice.
 -	`Decharger`: reduces charging artifacts, typical of cryo-FIB/SEM images.
--	`Registrator`: aligns the slices of a stack to ensure 3D structural continuity of objects [@evangelidis2008parametric],   
-  [@reddy1996fft; @le2005dense].
+-	`Registrator`: aligns the slices of a stack to ensure 3D structural continuity of objects [@evangelidis2008parametric; @reddy1996fft; @le2005dense].
 -	`Affine`: performs a generic affine transformation (e.g., a rotation) on a stack.
 -	`Cropper`: crops a specific region of a stack. 
 -	`Equalizer`: enhances the contrast in an image using the CLAHE algorithm [@zuiderveld1994contrast].
